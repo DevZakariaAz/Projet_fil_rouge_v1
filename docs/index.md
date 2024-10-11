@@ -1,48 +1,60 @@
 # Projet : Application de Gestion de Budget Personnel
 
-
-## **Besoin**
+## 1- **Besoin**
 
 L’application de gestion de budget personnel permet aux utilisateurs d’ajouter et organiser leurs revenus, ainsi que d'enregistrer leurs dépenses classées par catégories.
 
-## Persona: Ahmed
+---
+## 2- **Persona**
+### Nom
+Ahmed
 
-### Age
+### Âge
 28
 
-### Occupation
-Junior Software Developer
+### Profession
+Développeur logiciel junior
 
-### Location
-Casablanca, Morocco
+### Localisation
+Casablanca, Maroc
 
-### Income Level
-Middle income (~$1,500/month)
+### Niveau de revenu
+Revenu moyen (~1 500 $/mois)
 
-### Background
-- Ahmed is a junior software developer who has recently started earning a stable salary. He wants to improve his financial habits and save for the future, especially for travel and purchasing a car. He struggles with managing his finances manually and seeks a more structured approach to track his income and expenses.
+### Contexte
+- Ahmed est un développeur logiciel junior qui a récemment commencé à gagner un salaire stable. Il souhaite améliorer ses habitudes financières et économiser pour l'avenir, notamment pour voyager et acheter une voiture. Il a du mal à gérer ses finances manuellement et recherche une approche plus structurée pour suivre ses revenus et dépenses.
 
-### Goals
-- Track income from his job and freelance projects.
-- Control and categorize daily expenses to reduce unnecessary spending.
-- Save money for specific goals like travel and buying a car.
+### Objectifs
+- Suivre les revenus de son emploi et de ses projets freelances.
+- Contrôler et catégoriser ses dépenses quotidiennes pour réduire les dépenses inutiles.
+- Économiser de l'argent pour des objectifs spécifiques comme les voyages et l'achat d'une voiture.
 
-### Challenges
-- Difficulty organizing his expenses across multiple categories.
-- Often overspends because he doesn’t keep track of small purchases.
-  
+### Défis
+- Difficulté à organiser ses dépenses dans plusieurs catégories.
+- Souvent, il dépasse son budget car il ne suit pas ses petites dépenses.
+
 ### Motivations
-- Wants to achieve financial stability and meet savings goals.
-- Prefers a simple, user-friendly app that saves time.
+- Veut atteindre une stabilité financière et respecter ses objectifs d'épargne.
+- Privilégie une application simple et conviviale qui fait gagner du temps.
 
 ### Frustrations
-- Manual tracking in Excel is time-consuming and feels overwhelming.
-- Lack of clear insight into where his money is going.
+- Le suivi manuel dans Excel est chronophage et semble écrasant.
+- Manque de visibilité claire sur où va son argent.
 
-### Key Quote
-> "I need an app that can quickly show me where my money goes, and help me stay on top of my budget without spending too much time."
+### Citation clé
+> "J'ai besoin d'une application qui peut me montrer rapidement où va mon argent et m'aider à rester au courant de mon budget sans y passer trop de temps."
 
-### Technology Use
-- **Devices**: Smartphone, laptop
-- **Apps**: Uses Google Calendar, PayPal, and a banking app.
-- **Tech Preferences**: Prefers apps that are easy to navigate with minimal input required.
+### Utilisation de la technologie
+- **Appareils** : Smartphone, ordinateur portable
+- **Applications** : Utilise Google Calendar, PayPal et une application bancaire.
+- **Préférences technologiques** : Privilégie les applications faciles à naviguer avec un minimum d'entrées requises.
+
+---
+## 2- **Fonctionnalités simples**
+
+1. *Suivi des revenus et des dépenses* : Ajouter et catégoriser les transactions.
+2. *Catégorisation automatique* : Suggestions de catégories lors de l'entrée des dépenses.
+3. *Budget mensuel* : Fixer des limites pour chaque catégorie avec alertes.
+4. *Rapports visuels* : Graphiques pour visualiser les dépenses mensuelles.
+6. *Notifications de rappel* : Alertes pour les dépassements de budget et les saisies manquées.
+7. *Objectifs d'épargne* : Suivre les progrès vers des objectifs financiers.
