@@ -1,10 +1,4 @@
-2024-10-10 12:53
-
-Tags: [[Mobile_Development]] 
-
-Status:[[Doing]]
-
-## Projet : Application de Gestion de Budget Personnel
+# Projet : Application de Gestion de Budget Personnel
 
 
 ### **Besoin**
