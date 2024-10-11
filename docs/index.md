@@ -6,20 +6,21 @@ L’application de gestion de budget personnel permet aux utilisateurs d’ajout
 
 ---
 ## 2- **Persona**
-### Nom
+
+### Nom 
 Ahmed
 
 ### Âge
-28
+28 ans
 
 ### Profession
-Développeur logiciel junior
+salarié
 
 ### Localisation
 Casablanca, Maroc
 
 ### Niveau de revenu
-Revenu moyen (~1 500 $/mois)
+Revenu moyen (~4 500 DH/mois)
 
 ### Contexte
 - Ahmed est un développeur logiciel junior qui a récemment commencé à gagner un salaire stable. Il souhaite améliorer ses habitudes financières et économiser pour l'avenir, notamment pour voyager et acheter une voiture. Il a du mal à gérer ses finances manuellement et recherche une approche plus structurée pour suivre ses revenus et dépenses.
@@ -41,7 +42,7 @@ Revenu moyen (~1 500 $/mois)
 - Le suivi manuel dans Excel est chronophage et semble écrasant.
 - Manque de visibilité claire sur où va son argent.
 
-### Citation clé
+### Clé
 > "J'ai besoin d'une application qui peut me montrer rapidement où va mon argent et m'aider à rester au courant de mon budget sans y passer trop de temps."
 
 ### Utilisation de la technologie
@@ -53,8 +54,13 @@ Revenu moyen (~1 500 $/mois)
 ## 2- **Idéation Fonctionnalités**
 
 1. *Suivi des revenus et des dépenses* : Ajouter et catégoriser les transactions.
+
 2. *Catégorisation automatique* : Suggestions de catégories lors de l'entrée des dépenses.
+
 3. *Budget mensuel* : Fixer des limites pour chaque catégorie avec alertes.
+
 4. *Rapports visuels* : Graphiques pour visualiser les dépenses mensuelles.
-6. *Notifications de rappel* : Alertes pour les dépassements de budget et les saisies manquées.
-7. *Objectifs d'épargne* : Suivre les progrès vers des objectifs financiers.
+
+5. *Notifications de rappel* : Alertes pour les dépassements de budget et les saisies manquées.
+
+6. *Objectifs d'épargne* : Suivre les progrès vers des objectifs financiers.
