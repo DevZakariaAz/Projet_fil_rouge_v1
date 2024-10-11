@@ -50,7 +50,7 @@ Revenu moyen (~1 500 $/mois)
 - **Préférences technologiques** : Privilégie les applications faciles à naviguer avec un minimum d'entrées requises.
 
 ---
-## 2- **Fonctionnalités simples**
+## 2- **Idéation Fonctionnalités**
 
 1. *Suivi des revenus et des dépenses* : Ajouter et catégoriser les transactions.
 2. *Catégorisation automatique* : Suggestions de catégories lors de l'entrée des dépenses.
