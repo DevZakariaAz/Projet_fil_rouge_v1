@@ -49,7 +49,7 @@ Revenu moyen (~4 500 DH/mois)
 - **Appareils** : Smartphone, ordinateur portable
 - **Applications** : Utilise Google Calendar, PayPal et une application bancaire.
 - **Préférences technologiques** : Privilégie les applications faciles à naviguer avec un minimum d'entrées requises.
-
+<!-- 
 ---
 ## 2- **Idéation Fonctionnalités**
 
@@ -63,4 +63,4 @@ Revenu moyen (~4 500 DH/mois)
 
 5. *Notifications de rappel* : Alertes pour les dépassements de budget et les saisies manquées.
 
-6. *Objectifs d'épargne* : Suivre les progrès vers des objectifs financiers.
+6. *Objectifs d'épargne* : Suivre les progrès vers des objectifs financiers. -->
