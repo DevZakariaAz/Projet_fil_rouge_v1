@@ -1,0 +1,41 @@
+@startuml
+left to right direction
+actor User
+
+package "Revenus" {
+  usecase "Ajouter un revenu" as UC_CreateIncome
+  usecase "Modifier un revenu" as UC_UpdateIncome
+  usecase "Supprimer un revenu" as UC_DeleteIncome
+  usecase "Consulter les revenus" as UC_ReadIncome
+}
+
+package "Dépenses" {
+  usecase "Ajouter une dépense" as UC_CreateExpense
+  usecase "Modifier une dépense" as UC_UpdateExpense
+  usecase "Supprimer une dépense" as UC_DeleteExpense
+  usecase "Consulter les dépenses" as UC_ReadExpense
+}
+
+package "Catégories" {
+  usecase "Créer une catégorie" as UC_CreateCategory
+  usecase "Modifier une catégorie" as UC_UpdateCategory
+  usecase "Supprimer une catégorie" as UC_DeleteCategory
+  usecase "Lister les catégories" as UC_ReadCategory
+}
+
+User -- UC_CreateIncome
+User -- UC_UpdateIncome
+User -- UC_DeleteIncome
+User -- UC_ReadIncome
+
+User -- UC_CreateExpense
+User -- UC_UpdateExpense
+User -- UC_DeleteExpense
+User -- UC_ReadExpense
+
+User -- UC_CreateCategory
+User -- UC_UpdateCategory
+User -- UC_DeleteCategory
+User -- UC_ReadCategory
+
+@enduml
