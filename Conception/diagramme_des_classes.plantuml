@@ -1,0 +1,50 @@
+@startuml
+title Diagramme des Classes - Solution pour Saisie d'Absence
+
+class Formateur {
+  - id: int
+  - nom: String
+  - matiere: String
+  - email: String
+}
+
+class RH {
+  - id: int
+  - nom: String
+  - email: String
+}
+
+class Absence {
+  - id: int
+  - date: Date
+  - statut: String
+}
+
+class Rapport {
+  - id: int
+  - contenu: String
+  - dateCreation: Date
+}
+
+class Seance {
+  - id: int
+  - cours: String
+  - horaire: Date
+  - duree: int
+}
+
+class Stagiaire {
+  - id: int
+  - nom: String
+  - email: String
+  - groupe: String
+}
+
+
+Formateur "1" -- "0..*" Seance 
+Seance "1" -- "0..*" Absence 
+Stagiaire "1" -- "0..*" Absence 
+RH "1" -- "0..*" Rapport 
+RH "1" -- "0..*" Absence 
+
+@enduml
