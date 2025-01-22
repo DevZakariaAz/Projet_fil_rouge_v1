@@ -1,0 +1,50 @@
+@startuml
+skinparam backgroundColor #E6F0FA
+skinparam classBackgroundColor #D0E4F7
+skinparam classBorderColor #A0C8E5
+skinparam classArrowColor #5085A5
+skinparam classFontColor #003F5C
+
+class User {
+    +id: Int
+    +name: String
+    +email: String
+    +password: String
+    +created_at: timestamp
+    +updated_at: timestamp
+}
+class Article {
+    +id: Int
+    +title: String
+    +content: text
+    +created_at: timestamp
+    +updated_at: timestamp
+}
+
+class Category {
+    +id: Int
+    +name: String
+    +slug: String
+    +created_at: timestamp
+    +updated_at: timestamp
+}
+class Tag {
+    +id: Int
+    +name: String
+    +slug: String
+    +created_at: timestamp
+    +updated_at: timestamp
+}
+class Comment {
+    +id: Int
+    +content: String
+    +created_at: timestamp
+    +updated_at: timestamp
+}
+
+Category "1" -- "*" Article 
+Article "0..*" -- "0..*" Tag 
+Article "1" -- "0..*" Comment 
+User "1" -- "0..*" Comment 
+User "1" -- "0..*" Article 
+@enduml
