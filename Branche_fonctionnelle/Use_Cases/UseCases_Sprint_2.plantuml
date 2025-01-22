@@ -1,0 +1,18 @@
+@startuml
+title Saisie d'Absence - Cas d'Utilisation - Sprint 2
+left to right direction
+
+actor Formateur as U
+actor Responsable_des_stagaires as A
+
+rectangle "Sprint 2" {
+    usecase UC3 as "Modifier une absence"
+    usecase UC4 as "Générer un rapport"
+    usecase UC5 as "Consulter les absences globales"
+}
+
+U -- UC3 
+A -- UC5 
+A -- UC4 
+
+@enduml

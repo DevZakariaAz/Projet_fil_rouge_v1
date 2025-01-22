@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+
+actor "Formateur" as U
+actor "Responsable des stagiaires" as A
+
+rectangle "Actions" {
+    usecase UC1 as "Gérer les absences"
+    usecase UC2 as "Générer un rapport"
+    usecase UC3 as "Gérer les apprenents"
+}
+
+U -- UC1
+A -- UC2
+A -- UC1
+A -- UC3
+
+
+@enduml
