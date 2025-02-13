@@ -1,50 +1,39 @@
 @startuml
-title Diagramme des Classes - Solution pour Saisie d'Absence
+title Diagramme des Classes - Basé sur le Cas d'Utilisation
 
-class Formateur {
+abstract class Persone {
   - id: int
   - nom: String
-  - matiere: String
   - email: String
 }
 
-class RH {
-  - id: int
-  - nom: String
-  - email: String
+class Formateur {
+  - metiers: String
+}
+
+class Stagiaire {
+  - groupe: String
 }
 
 class Absence {
   - id: int
   - date: Date
   - statut: String
+  + justifierAbsence(): void
 }
 
 class Rapport {
-  - id: int
   - contenu: String
   - dateCreation: Date
+  + afficher(): String
+  + generer(): void
 }
 
-class Seance {
-  - id: int
-  - cours: String
-  - horaire: Date
-  - duree: int
-}
+Persone <|-- Formateur
+Persone <|-- Stagiaire
 
-class Stagiaire {
-  - id: int
-  - nom: String
-  - email: String
-  - groupe: String
-}
-
-
-Formateur "1" -- "0..*" Seance 
-Seance "1" -- "0..*" Absence 
-Stagiaire "1" -- "0..*" Absence 
-RH "1" -- "0..*" Rapport 
-RH "1" -- "0..*" Absence 
+Formateur "1" -- "0..*" Absence : "Supervise"
+Stagiaire "1" -- "0..*" Absence : "Manque"
+Formateur "1" -- "0..*" Rapport : "Génère"
 
 @enduml
