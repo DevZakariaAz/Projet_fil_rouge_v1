@@ -5,8 +5,8 @@ theme: seriph
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://images.unsplash.com/photo-1456362150245-7f7d7ed8ebae?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
-info: |
+title: Atelier Resaux
+info: | 
   ## Slidev Starter Template
   Presentation slides for developers.
 # apply unocss classes to the current slide
@@ -29,10 +29,7 @@ Presentation slides for developers
 </div>
 
 <div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
+  <a href="https://github.com/DevZakariaAz/Projet_fil_rouge_v1.git" target="_blank" class="slidev-icon-btn">
     <carbon:logo-github />
   </a>
 </div>
@@ -549,7 +546,7 @@ Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML D
 ---
 foo: bar
 dragPos:
-  square: 697,39,167,_,-16
+  square: 655,50,167,_,-16
 ---
 
 # Draggable Elements
@@ -575,7 +572,7 @@ Double-click on the draggable elements to edit their positions.
 </v-drag>
 ```
 
-<v-drag pos="690,200,261,_,-15">
+<v-drag pos="483,337,261,_,-15">
   <div text-center text-3xl border border-main rounded>
     Double-click me!
   </div>
