@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de Bord d'Assiduité</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="grid-container">
+      <!-- Absenteeism Rate -->
+      <div class="card">
+        <h2>Taux d'absentéisme</h2>
+        <div class="circle-progress">
+          <svg width="150" height="150" viewBox="0 0 150 150">
+            <circle
+              cx="75"
+              cy="75"
+              r="60"
+              fill="none"
+              stroke="#f0f0f0"
+              stroke-width="12"
+            />
+            <circle
+              id="progress-circle"
+              cx="75"
+              cy="75"
+              r="60"
+              fill="none"
+              stroke="#3b82f6"
+              stroke-width="12"
+              stroke-dasharray="377"
+              stroke-dashoffset="364"
+              stroke-linecap="round"
+              transform="rotate(-90 75 75)"
+            />
+          </svg>
+          <div class="circle-text">
+            <span id="percentage" class="percentage">3,5 %</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Today's Absences - Enhanced with more assistance -->
+      <div class="card">
+        <h2>Absences du jour</h2>
+        <div class="big-number-container">
+          <div id="today-absences" class="big-number">5</div>
+          <div class="absence-context">
+            <div id="absence-trend" class="absence-trend increasing">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+              </svg>
+              <span id="absence-change">+1</span>
+            </div>
+            <div class="absence-comparison">vs. hier</div>
+          </div>
+        </div>
+        <div class="absence-details">
+          <div class="absence-stat">
+            <div class="absence-label">Moyenne hebdo</div>
+            <div id="weekly-avg" class="absence-value">4.2</div>
+          </div>
+          <div class="absence-stat">
+            <div class="absence-label">Taux journalier</div>
+            <div id="daily-rate" class="absence-value">3.8%</div>
+          </div>
+        </div>
+        <div id="absence-recommendation" class="absence-recommendation">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 8v4M12 16h.01" />
+          </svg>
+          <span>Le taux d'absence est supérieur à la moyenne. Vérifiez les absences récurrentes.</span>
+        </div>
+      </div>
+
+      <!-- Weekly Total -->
+      <div class="card">
+        <h2>Total hebdomadaire</h2>
+        <div id="weekly-total" class="big-number">23</div>
+        <div class="mini-chart">
+          <svg id="weekly-chart" width="150" height="40" viewBox="0 0 150 40">
+            <polyline
+              fill="none"
+              stroke="#3b82f6"
+              stroke-width="2"
+              points="0,15 37.5,10 75,12 112.5,7 150,5"
+            />
+            <path
+              d="M0,15 37.5,10 75,12 112.5,7 150,5 L150,40 L0,40 Z"
+              fill="rgba(59, 130, 246, 0.1)"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Active Trainers -->
+      <div class="card wide">
+        <h2>Formateurs actifs</h2>
+        <div class="table">
+          <div class="table-header">
+            <div class="name-column">Nom</div>
+            <div class="value-column">Assisences</div>
+          </div>
+          <div id="active-trainers-list">
+            <!-- Trainers will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Absent Students -->
+      <div class="card wide">
+        <h2>Élèves absents</h2>
+        <div class="table">
+          <div class="table-header">
+            <div class="name-column">Nom</div>
+            <div class="value-column">Fréquvence</div>
+          </div>
+          <div id="absent-students-list">
+            <!-- Students will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Absence Evolution -->
+      <div class="card extra-wide">
+        <h2>Évolution des absences</h2>
+        <div class="chart-container">
+          <svg id="evolution-chart" width="100%" height="200" viewBox="0 0 700 200">
+            <!-- Y-axis labels -->
+            <text x="10" y="20" class="chart-text">10</text>
+            <text x="10" y="80" class="chart-text">8</text>
+            <text x="10" y="140" class="chart-text">6</text>
+            <text x="10" y="200" class="chart-text">0</text>
+            
+            <!-- X-axis labels -->
+            <text x="50" y="220" class="chart-text">5</text>
+            <text x="150" y="220" class="chart-text">10</text>
+            <text x="250" y="220" class="chart-text">15</text>
+            <text x="350" y="220" class="chart-text">20</text>
+            <text x="450" y="220" class="chart-text">25</text>
+            
+            <!-- Chart line and points will be added by JavaScript -->
+          </svg>
+        </div>
+      </div>
+
+      <!-- Untreated Sessions -->
+      <div class="card">
+        <div class="warning-container">
+          <div class="warning-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" fill="#FEE2E2" />
+              <path d="M12 8v4m0 4h.01" stroke="#EF4444" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div>
+            <h2>Séances non traitées</h2>
+            <p><span id="untreated-count">3</span> séances où aucune absence n'a été saisie</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Export Button -->
+      <div class="card">
+        <button id="export-button" class="export-button">
+          Exporter les données
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

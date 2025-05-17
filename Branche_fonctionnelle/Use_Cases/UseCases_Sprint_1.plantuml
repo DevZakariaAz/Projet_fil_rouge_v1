@@ -1,15 +1,13 @@
 @startuml
-title Saisie d'Absence - Cas d'Utilisation - Sprint 1
 left to right direction
+actor "Surveillant Général" as SG
 
-actor Formateur as U
-
-rectangle "Sprint 1" {
-    usecase UC1 as "Saisir les absences"
-    usecase UC2 as "Consulter les absences"
+rectangle "Saisie d'Absence Sprint 1" {
+    usecase UC1 as "Gérer les Absences"
+    usecase UC2 as "Visualiser Statistiques d'Absence"
 }
 
-U -- UC1 
-U -- UC2 
+SG -- UC1 
+SG -- UC2 
 
 @enduml

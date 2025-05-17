@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor Formateur
+actor "Surveillant général" as SG
+' actor Administrateur
+
+usecase "Gérer les absences" as GA
+usecase "Visualiser les absences" as VA
+' usecase "Modifier une absence" as MA
+usecase "Générer des rapports" as GR
+' usecase "Configurer les paramètres" as CP
+
+Formateur --> GA
+SG --> GA
+
+Formateur --> VA
+SG --> VA
+
+' Formateur --> MA
+' SG --> MA
+
+SG --> GR
+
+' Administrateur --> CP
+
+GA .> VA : include
+
+@enduml

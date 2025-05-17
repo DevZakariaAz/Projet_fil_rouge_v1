@@ -1,19 +1,27 @@
 @startuml
 left to right direction
+actor "Formateur" as F
+actor "Surveillant Général" as SG
 
-actor "Formateur" as U
-actor "Responsable des stagiaires" as A
-
-rectangle "Actions" {
-    usecase UC1 as "Gérer les absences"
-    usecase UC2 as "Générer un rapport"
-    usecase UC3 as "Gérer les apprenents"
+rectangle "Système de Saisie d'Absence" {
+  usecase "Gérer les Absences" as UC1
+  usecase "Consulter Liste des Absences" as UC2
+  usecase "Générer Rapport d'Absence" as UC3
+  usecase "Visualiser Statistiques d'Absence" as UC4
+  usecase "Filtrer les Absences" as UC6
+  usecase "Rechercher Absence par Classe" as UC7
+  usecase "Rechercher Absence par Apprenant" as UC8
 }
 
-U -- UC1
-A -- UC2
-A -- UC1
-A -- UC3
+SG -- UC1
+SG -- UC2
+SG -- UC3
+SG -- UC4
+F -- UC2
+
+UC2 ..> UC6 : <<include>>
+UC2 ..> UC7 : <<include>>
+UC2 ..> UC8 : <<include>>
 
 
 @enduml
