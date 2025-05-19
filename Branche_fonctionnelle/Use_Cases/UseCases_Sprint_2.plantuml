@@ -7,7 +7,7 @@ actor "Surveillant Général" as SG
 rectangle "Saisie d'Absence Sprint 2" {
     usecase UC1 as "Consulter Liste des Absences"
     usecase UC2 as "Filtrer les Absences"
-    usecase UC3 as "Rechercher Absence par Classe"
+    usecase UC3 as "Gerer les Absences"
 }
 
 F -- UC1 

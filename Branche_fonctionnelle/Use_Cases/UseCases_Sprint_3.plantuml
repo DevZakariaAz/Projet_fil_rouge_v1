@@ -6,9 +6,10 @@ actor "Surveillant Général" as SG
 rectangle "Saisie d'Absence Sprint 3" {
     usecase UC1 as "Générer Rapport d'Absence"
     usecase UC2 as "Rechercher Absence par Apprenant"
+    usecase UC3 as "Rechercher Absence par Classe"
 }
 
 SG -- UC1 
 SG -- UC2 
-
+SG -- UC3
 @enduml
